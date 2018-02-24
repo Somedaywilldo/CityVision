@@ -1,0 +1,12 @@
+搭建ENet
+
+ENet主要的搭建依赖是opencv，主要用于图像处理，
+ENet需要使用python接口，
+有了caffe，步骤是一样的，进入ENet/caffe-enet，
+编译caffe，可以使用make或者cmake，注意一点，
+使用make的时候，一定要先make clean，在更改任何的编译命令之前！！！也一定要make clean！！！
+Someday在此处遇到了两种问题，一种是机器中存在两种不同版本的protobuf，第二种是X server错误，
+这两个错误，都需要动用：Google+Stack Overflow大法解决，X server中主要问题是。
+
+？？？
+搭建好环境之后，我们需要更改scripts/test的部分的代码，进行修改。

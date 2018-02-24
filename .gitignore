@@ -1,0 +1,34 @@
+#ignore the pictures directory
+Streetview_Pictures/
+Baidu_Streetview_Pictures/
+Baidu_Streetview_Spider/Cache/
+Baidu_Streetview_Spider/Catched_data/
+Class_Bottom_Pictures/ 
+Class_Top_Pictures/
+Label_Pictures/
+
+#ignore database
+Semantic_Pixel_Database/   
+Streetview_Database/
+
+#ignore cache and data 
+Streetview_Spider/Cache 
+Streetview_Spider/Catched_data
+Baidu_Streetview_Spider/Cache 
+Baidu_Streetview_Spider/Catched_data
+Semantic_Segmentation/segmentation_cache
+Data_Cleaner/data_clean_cache
+
+#ignore keys
+Baidu_Streetview_Spider/keys.txt  
+Streetview_Spider/keys.txt 
+
+#ignore test files
+Semantic_Segmentation/test_label
+
+#ignore python cache
+*.pyc
+
+
+
+

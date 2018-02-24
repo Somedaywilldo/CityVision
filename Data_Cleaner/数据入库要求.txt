@@ -1,0 +1,12 @@
+数据入库要求：
+
+源文件：Cityname_img_info_file_filtered.txt
+按照源文件中信息存放顺序，构建数据库，使用sqlite3，数据库每一列依次为：
+pano、heading、lat、lng、address、description
+类型依次为：
+string、int、float、float、string、string
+
+Cityname_img_info_file_filtered.txt中每个街景点有四条信息，
+而放入数据库，每个街景点的四条信息只存放一条，其中存放的heading为四面中任意一面的heading%90即可。
+
+数据库使用sqlite3，以Cityname做命名即可。

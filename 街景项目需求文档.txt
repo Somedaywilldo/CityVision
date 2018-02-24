@@ -1,0 +1,30 @@
+关于分割：
+
+1、文件格式统一
+	文件名：pano+heading
+	最后要有：/city_name/：所有jpg文件
+			文件信息索引：txt
+			文件名索引：txt
+			数据库一个：db
+2、信息全入数据库：
+定义每条数据：pano+heading+lat+lng+address+discription
+
+其中，heading为四个heading中任意一个即可。
+
+校验数据流程：
+	1、生成所有文件索引和信息索引，以pano为第一关键字，以heading为第二关键字，均从小到大排序，保证两点：
+		1、所有pano有四个heading。
+		2、四个heading模90同余。
+
+3、文件名全部为pano_heading.jpg
+4、文件大小可以调，只能往小调，校验一下所有文件大小。
+5、每个pano一定对应四个heading，多于或者少于4个的全部删除。
+6、要写一个checker，文件要有索引，以验证在拷贝中没有丢失文件。文件索引：只存文件全名。
+7、分割之后的文件名命名为pano_heading_ent.png，也要再次check，防止数据丢失，数据丢失的文件重新处理。
+
+分割完毕：
+
+1、要能在shapefile中标注出所有pano经纬度。
+2、要能在mapbox空间中，展示出所有的点。
+3、要能生成任意一个分割类别的热力图谱。
+
