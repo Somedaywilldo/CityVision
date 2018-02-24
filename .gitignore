@@ -29,6 +29,7 @@ Semantic_Segmentation/test_label
 #ignore python cache
 *.pyc
 
-
+#ignore shapefile
+City_Shapefile 
 
 
