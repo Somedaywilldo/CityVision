@@ -10,6 +10,7 @@ Label_Pictures/
 #ignore database
 Semantic_Pixel_Database/   
 Streetview_Database/
+Baidu_Streetview_Database/
 
 #ignore cache and data 
 Streetview_Spider/Cache 
