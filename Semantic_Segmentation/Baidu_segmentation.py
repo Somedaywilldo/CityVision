@@ -12,6 +12,7 @@ import sys
 import sqlite3
 
 #设置目录
+#
 
 ENet_path = '/home/yyh/ENet/' #ENet根目录
 caffe_root = 'caffe-enet/'%ENet_path  # Change this to the absolute directory to ENet Caffe
