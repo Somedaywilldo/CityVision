@@ -27,7 +27,7 @@ def geo_dist(x,y):  #两点地理距离，单位km
 	d = acos(temp)*R  
 	return d
 
-city_name = "Shanghai"
+city_name = "Guangzhou"
 root_path = "/Users/mac/Desktop/CityVision/"
 
 

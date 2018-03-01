@@ -12,8 +12,8 @@ import sys
 
 #设置目录
 
-caffe_root = '/home/yyh/ENet/caffe-enet/'  # Change this to the absolute directory to ENet Caffe
-ENet_dir='/home/yyh/ENet/' #ENet根目录
+root_path = '/home/yyh/ENet/' #ENet根目录
+caffe_root = 'caffe-enet/'%root_path  # Change this to the absolute directory to ENet Caffe
 city_wander_dir='/data/yyh/CityWander/' 
 catched_data_dir=city_wander_dir+'Streetview_Spider/Catched_data/'
 
@@ -36,9 +36,9 @@ def fil(x): #过滤空字符串
 def make_parser():
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--model', type=str, default=ENet_dir+'prototxts/enet_deploy_final.prototxt', help='.prototxt file for inference')
-    parser.add_argument('--weights', type=str, default=ENet_dir+'enet_weights_zoo/cityscapes_weights.caffemodel', help='.caffemodel file')
-    parser.add_argument('--colours', type=str, default=ENet_dir+'scripts/cityscapes19.png', help='label colours')
+    parser.add_argument('--model', type=str, default=root_path+'prototxts/enet_deploy_final.prototxt', help='.prototxt file for inference')
+    parser.add_argument('--weights', type=str, default=root_path+'enet_weights_zoo/cityscapes_weights.caffemodel', help='.caffemodel file')
+    parser.add_argument('--colours', type=str, default=root_path+'scripts/cityscapes19.png', help='label colours')
     parser.add_argument('--out_dir', type=str, default=None, help='output directory in which the segmented images '                                                             'should be stored')
     parser.add_argument('--gpu', type=str, default='0', help='0: gpu mode active, else gpu mode inactive')
     parser.add_argument('--city_name', type=str, required=Ture , help='argument city_name is necessary')

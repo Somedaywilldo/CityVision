@@ -1,7 +1,7 @@
 import sqlite3
 
 root_path = "/Users/mac/Desktop/CityVision/"
-city_name = "Guangzhou"
+city_name = "Shanghai"
 
 
 #create database
@@ -65,6 +65,7 @@ def data_format(x):
 	ret["description"]=temp_list[4]
 	ret["place"]=temp_list[5]
 	return ret
+
 
 
 

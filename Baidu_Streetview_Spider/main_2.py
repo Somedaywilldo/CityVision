@@ -14,13 +14,12 @@ import socket
 
 socket.setdefaulttimeout(20)
 
-
 #引入自己写的模块
 from convert_txt_to_DB import *
 
 
 root_path = "/Users/mac/Desktop/CityVision/"
-city_name = "Guangzhou"
+city_name = "Shanghai"
 
 
 #根据url获取数据 格式：bytes（通用）
@@ -206,7 +205,7 @@ for i in range(last_try,len(point_set)):
 				continue
 			#multiprocess
 			#print('Parent process %s.' % os.getpid())
-			
+			'''
 			print("Multiprocessing...")
 
 			multi_temp_arg = []
@@ -235,7 +234,7 @@ for i in range(last_try,len(point_set)):
 				temp_arg['heading'] = j*90
 				img_path = '%sBaidu_Streetview_Pictures/%s/%s_%d.jpg'%(root_path,city_name,poi_id,j*90)
 				cnt_heading += save_picture(temp_arg,img_path)
-			'''
+			
 			if (cnt_heading == 4):
 				cnt_catch += 1
 				print("Total: %d Try: %d"%(len(point_set),cnt_try))

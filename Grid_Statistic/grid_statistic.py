@@ -83,6 +83,7 @@ for class_i in range(len(sem_class)):
 	for i in range(len(class_data)):
 		#print(i)
 		if(i != len(class_data)-1):
+			class_data_list.append([int(i//y_len),int(i%y_len),class_data[i][2])])
 			grid_data.write("[%d,%d,%f],"%(int(i//y_len),int(i%y_len),class_data[i][2]))
 			print("[%d,%d,%f],"%(int(i//y_len),int(i%y_len),class_data[i][2]),end="")
 		else:
