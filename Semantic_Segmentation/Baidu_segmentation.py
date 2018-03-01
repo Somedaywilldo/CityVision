@@ -15,9 +15,8 @@ import sqlite3
 #
 
 ENet_path = '/home/yyh/ENet/' #ENet根目录
-caffe_root = 'caffe-enet/'%ENet_path  # Change this to the absolute directory to ENet Caffe
+caffe_root = '%scaffe-enet/'%ENet_path  # Change this to the absolute directory to ENet Caffe
 root_path = '/data/yyh/CityVision/' 
-data_path = city_wander_dir+'Streetview_Spider/Catched_data/'
 
 sys.path.insert(0, caffe_root + 'python')
 import caffe
@@ -35,7 +34,7 @@ def make_parser():
     parser.add_argument('--colours', type=str, default=ENet_path+'scripts/cityscapes19.png', help='label colours')
     parser.add_argument('--out_dir', type=str, default=None, help='output directory in which the segmented images '                                                             'should be stored')
     parser.add_argument('--gpu', type=str, default='0', help='0: gpu mode active, else gpu mode inactive')
-    parser.add_argument('--city_name', type=str, required=Ture , help='argument city_name is necessary')
+    parser.add_argument('--city_name', type=str, required=True , help='argument city_name is necessary')
     return parser
 
 if __name__ == '__main__':
@@ -57,7 +56,7 @@ if __name__ == '__main__':
     conn = sqlite3.connect('%sBaidu_Streetview_Database/%s_Baidu.db'%(root_path, args.city_name) )
     cursor = conn.cursor()
 
-    database = cursor.execute("SELECT poiid,address from %s_Baidu")
+    database = cursor.execute("SELECT poiid,address FROM %s_Baidu"%args.city_name)
     poi_set = []
     for row in database:
         print("poiid:%s address:%s",row[0],row[1])

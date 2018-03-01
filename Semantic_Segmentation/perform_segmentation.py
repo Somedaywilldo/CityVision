@@ -4,7 +4,7 @@ import threading
 from time import ctime,sleep
 
 def segmentation(x):
-	os.system("python test_segmentation.py --city_name "+x)
+	os.system("python Baidu_segmentation.py --city_name "+x)
 
 threads = []
 t1 = threading.Thread(target=segmentation,args=(u"Beijing",))
