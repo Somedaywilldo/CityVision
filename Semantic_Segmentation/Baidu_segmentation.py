@@ -102,7 +102,7 @@ if __name__ == '__main__':
             key = cv2.waitKey(0)
 
             #save Label picture
-            args.out_dir = '%sBaidu_Label_Pictures/'%root_path
+            args.out_dir = '%sBaidu_Label_Pictures/%s/'%(root_path,args.city_name)
             input_path_ext = args.input_image.split(".")[-1]
             input_image_name = args.input_image.split("/")[-1:][0].replace('.' + input_path_ext, '')
             output_label = args.out_dir + input_image_name + '_label' + '.png'
@@ -110,7 +110,7 @@ if __name__ == '__main__':
             cv2.imwrite(output_label, prediction)  #只保留label图片，为单通道灰度图
 
             #save RGB picture
-            args.out_dir = '%sBaidu_RGB_Pictures/'%root_path
+            args.out_dir = '%sBaidu_RGB_Pictures/%s/'%(root_path,args.city_name)
             input_path_ext = args.input_image.split(".")[-1]
             input_image_name = args.input_image.split("/")[-1:][0].replace('.' + input_path_ext, '')
             output_label = args.out_dir + input_image_name + '_rgb' + '.png'
