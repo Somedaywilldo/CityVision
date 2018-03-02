@@ -79,8 +79,11 @@ if __name__ == '__main__':
         for j in range(4):
             args.input_image="%sBaidu_Streetview_Pictures/%s/%s_%d.jpg"%(root_path,args.city_name,i,j*90)
 
-            input_image = cv2.imread(args.input_image, 1).astype(np.float32)
-            input_image = input_image[0:450, 0:1024] #去掉水印保留从左上角开始600*960的图片，去除水印
+            try:
+		input_image = cv2.imread(args.input_image, 1).astype(np.float32)
+            except:
+		continue
+	    input_image = input_image[0:450, 0:1024] #去掉水印保留从左上角开始600*960的图片，去除水印
 
             input_image = cv2.resize(input_image, (input_shape[3], input_shape[2]))
             input_image = input_image.transpose((2, 0, 1))
