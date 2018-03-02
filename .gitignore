@@ -6,11 +6,14 @@ Baidu_Streetview_Spider/Catched_data/
 Class_Bottom_Pictures/ 
 Class_Top_Pictures/
 Label_Pictures/
+Baidu_Label_Pictures/
+Baidu_RGB_Pictures/
 
 #ignore database
 Semantic_Pixel_Database/   
 Streetview_Database/
 Baidu_Streetview_Database/
+Baidu_Semantic_Database/
 
 #ignore cache and data 
 Streetview_Spider/Cache 
