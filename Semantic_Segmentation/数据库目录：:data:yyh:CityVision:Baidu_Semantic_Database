@@ -1,0 +1,16 @@
+数据库目录：/data/yyh/CityVision/Baidu_Semantic_Database/
+	或：	  /home/yyh/CityVision/Baidu_Semantic_Database/
+两个数据库完全相同
+数据目录，label图片：/data/yyh/CityVision/Baidu_Label_Pictures/
+数据目录，rgb图片：/data/yyh/CityVision/Baidu_RGB_Pictures/
+
+Label图片的形式和之前完全相同，大小变为：450*1024
+
+仍然统计各个类别像素总数即可，不用算占比。
+
+各个城市统计结果请放置于：/data/yyh/CityVision/Baidu_Semantic_Database/
+命名为：CityName_Baidu_Semantic.db
+
+
+
+

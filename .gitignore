@@ -8,6 +8,7 @@ Class_Top_Pictures/
 Label_Pictures/
 Baidu_Label_Pictures/
 Baidu_RGB_Pictures/
+Baidu_Class_Top_Pictures/
 
 #ignore database
 Semantic_Pixel_Database/   
