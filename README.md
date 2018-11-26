@@ -20,3 +20,9 @@ CityVision is a SmartCity project supported by CAS(Chinese Academy of Sciences) 
 ### Contact
 
 Yihang Yin(Somedaywilldo): someday@buaa.edu.cn
+
+### Acknowledgement
+
+Thanks for instructions and financial support by Professor Jingyuan Wang and Researcher Xiaochun Cao. 
+
+项目由中科院科教协同创新计划支持。
