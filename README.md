@@ -1,22 +1,22 @@
 # CityVision 城景视界
 
-####  城景视界项目，由尹一航、林家桢、张少昂联合开发。
+Project Leader: Yihang Yin
 
----
+Developers: Jianzhen Lin, Kun Yan, Shaoang Zhang
 
-### 项目介绍
+### Introduction
 
-城市漫游街景项目，是以百度街景、腾讯街景开放平台为依托，利用深度学习语义分割算法，对城市中楼房、树木、行人、车辆等类别的分布进行分析，并使用深层神经网络分析城市风格特征，目前分析的城市有北京、上海、广州。该项目由北京航空航天大学计算机学院本科生尹一航、林家桢、张少昂联合开发。
+CityVision is a SmartCity project supported by CAS(Chinese Academy of Sciences) and BUAA(Beihang Univeristy), instructed by Jiangyuan Wang(BUAA) and Xiaochun Cao(CAS). CityVision takes advantage of the massive street view data by Baidu and Tecent, using Deep Learning Semantic Segmantation to analyze building, trees, pedestrians and many other key elements in the city, we analyzed Beijing, Shanghai and Guangzhou, top 3 cities in scale and economics in  China.
 
-### 项目功能模块
+### Modules
 
-| 目录                    | 模块     |
-| --------------------- | ------ |
-| Streetview_Spider     | 街景爬虫模块 |
-| Data_Cleaner          | 数据清洗模块 |
-| Database_Manager      | 数据管理模块 |
-| Semantic_Segmentation | 语义分割模块 |
+| Directory             | Functionality                                          |
+| --------------------- | ------------------------------------------------------ |
+| Streetview_Spider     | Using Baidu Open API to collet images                  |
+| Data_Cleaner          | Filtering unuseable  data                              |
+| Database_Manager      | Constructing database to manage the image and GPS info |
+| Semantic_Segmentation | Using ENet to perform semantic segmentation            |
 
-### 联系作者
+### Contact
 
-联系人：尹一航，someday@buaa.edu.cn
+Yihang Yin(Somedaywilldo): someday@buaa.edu.cn
