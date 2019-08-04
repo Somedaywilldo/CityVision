@@ -6,7 +6,7 @@ Developers: Jianzhen Lin, Kun Yan, Shaoang Zhang
 
 ### Introduction
 
-CityVision is a SmartCity project supported by CAS(Chinese Academy of Sciences) and BUAA(Beihang Univeristy), instructed by Jiangyuan Wang(BUAA) and Xiaochun Cao(CAS). CityVision takes advantage of the massive street view data by Baidu and Tecent, using Deep Learning Semantic Segmantation to analyze building, trees, pedestrians and many other key elements in the city, we analyzed Beijing, Shanghai and Guangzhou, top 3 cities in scale and economics in  China.
+CityVision is a SmartCity project supported by CAS(Chinese Academy of Sciences) and BUAA(Beihang Univeristy), instructed by Jiangyuan Wang(BUAA) and Xiaochun Cao(CAS). CityVision takes advantage of the massive street view data by Baidu and Tecent, using Semantic Segmantation to analyze building, trees, pedestrians and many other key elements in the city, we analyzed Beijing, Shanghai and Guangzhou, top 3 cities in scale and economics in  China.
 
 ### Modules
 
@@ -26,3 +26,4 @@ Yihang Yin(Somedaywilldo): someday@buaa.edu.cn
 Thanks for instructions and financial support by Professor Jingyuan Wang and Researcher Xiaochun Cao. 
 
 项目由中科院科教协同创新计划支持。
+
